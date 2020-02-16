@@ -24,6 +24,7 @@ SECRET_KEY = '(&!*#($pk7bhial6y=anc&u8arfal&6bj03b21kgdui3!s)bwe'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+# DEBUG = bool(int(os.environ.get('DEBUG', 1)))   # use this line when running on production
 
 ALLOWED_HOSTS = []
 
@@ -123,3 +124,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 AUTH_USER_MODEL = 'profiles_api.UserProfile'
+
+STATIC_ROOT = '/static/'
